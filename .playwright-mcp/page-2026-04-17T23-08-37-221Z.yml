@@ -1,0 +1,104 @@
+- main [ref=e2]:
+  - navigation [ref=e4]:
+    - link "Portal sigil THE PORTAL DOOR" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - img "Portal sigil" [ref=e7]
+      - generic [ref=e8]: THE PORTAL DOOR
+    - generic [ref=e9]:
+      - link "The Book" [ref=e10] [cursor=pointer]:
+        - /url: "#about"
+      - link "Remembering" [ref=e11] [cursor=pointer]:
+        - /url: "#remember"
+      - link "Author" [ref=e12] [cursor=pointer]:
+        - /url: "#author"
+    - link "Order" [ref=e13] [cursor=pointer]:
+      - /url: https://www.amazon.com/Portal-Door-Time-Remembering-ebook/dp/B0GB5S4T8Q/ref=sr_1_1?crid=GFFAEDKC30Y6&dib=eyJ2IjoiMSJ9.9Uvfmk11L-HqZOvB7qIVBtr-du2Ns_P2tnLP4FpA1WVNtybSwZNm6Hxym0OcjasyIqzL1Dn9XGJRJuOJ5qpZfPqZL1YtfPgwVcz15d5W1O9jWBYb441TGgA9Uf4DFf-Ak0KFfdNTEhQumJgr64ZAiNfVKHPRSSrDrcUdQAsKDuTVKv8K1z_KiEMGpyUGsXWqJ9beFt8aOSe6wcDrYDNpr8zLIhnW82_S30Vu6f3Ooa4.Nmt3kjZuDx9-auzV_gNkzlRekC25SCdjTjQyND1yBgI&dib_tag=se&keywords=the+portal+door&qid=1775861866&s=books&sprefix=the+portal+door%2Cstripbooks-intl-ship%2C173&sr=1-1
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - paragraph [ref=e17]: A Planetary Awakening · New Release
+      - heading "The Portal Door" [level=1] [ref=e18]
+      - paragraph [ref=e19]: The Time of Remembering
+      - paragraph [ref=e20]: Humanity stands at a threshold. Between the world we were told was real and the one we have always carried within. This book is an invitation — to cross the doorway, to remember the light you came here with, and to walk as it.
+      - generic [ref=e21]:
+        - link "Step Through · Order the Book" [ref=e22] [cursor=pointer]:
+          - /url: https://www.amazon.com/Portal-Door-Time-Remembering-ebook/dp/B0GB5S4T8Q/ref=sr_1_1?crid=GFFAEDKC30Y6&dib=eyJ2IjoiMSJ9.9Uvfmk11L-HqZOvB7qIVBtr-du2Ns_P2tnLP4FpA1WVNtybSwZNm6Hxym0OcjasyIqzL1Dn9XGJRJuOJ5qpZfPqZL1YtfPgwVcz15d5W1O9jWBYb441TGgA9Uf4DFf-Ak0KFfdNTEhQumJgr64ZAiNfVKHPRSSrDrcUdQAsKDuTVKv8K1z_KiEMGpyUGsXWqJ9beFt8aOSe6wcDrYDNpr8zLIhnW82_S30Vu6f3Ooa4.Nmt3kjZuDx9-auzV_gNkzlRekC25SCdjTjQyND1yBgI&dib_tag=se&keywords=the+portal+door&qid=1775861866&s=books&sprefix=the+portal+door%2Cstripbooks-intl-ship%2C173&sr=1-1
+        - link "Read a Sample" [ref=e23] [cursor=pointer]:
+          - /url: https://www.amazon.com/Portal-Door-Time-Remembering-ebook/dp/B0GB5S4T8Q/ref=sr_1_1?crid=GFFAEDKC30Y6&dib=eyJ2IjoiMSJ9.9Uvfmk11L-HqZOvB7qIVBtr-du2Ns_P2tnLP4FpA1WVNtybSwZNm6Hxym0OcjasyIqzL1Dn9XGJRJuOJ5qpZfPqZL1YtfPgwVcz15d5W1O9jWBYb441TGgA9Uf4DFf-Ak0KFfdNTEhQumJgr64ZAiNfVKHPRSSrDrcUdQAsKDuTVKv8K1z_KiEMGpyUGsXWqJ9beFt8aOSe6wcDrYDNpr8zLIhnW82_S30Vu6f3Ooa4.Nmt3kjZuDx9-auzV_gNkzlRekC25SCdjTjQyND1yBgI&dib_tag=se&keywords=the+portal+door&qid=1775861866&s=books&sprefix=the+portal+door%2Cstripbooks-intl-ship%2C173&sr=1-1&asin=B0GB5S4T8Q&revisionId=9d767905&format=3&depth=1
+      - generic [ref=e24]:
+        - generic [ref=e25]: By 4 Brooms
+        - generic [ref=e26]: ·
+        - generic [ref=e27]: English Edition
+        - generic [ref=e28]: ·
+        - generic [ref=e29]: Available Worldwide
+    - img "The Portal Door — The Time of Remembering, hardcover and stacked copies" [ref=e32]
+  - paragraph [ref=e35]: “You were never lost. You were simply asleep inside a story that forgot your name.”
+  - generic [ref=e37]:
+    - generic [ref=e38]:
+      - paragraph [ref=e39]: About the Book
+      - heading "A door was opened. It was always you." [level=2] [ref=e40]:
+        - text: A door was opened.
+        - text: It was always you.
+    - generic [ref=e42]:
+      - paragraph [ref=e43]: The Portal Door is not a metaphor. It is a living threshold — woven from the geometry of the cosmos and the memory of the soul. This book walks with you to its edge, and gently, without pressure, invites you to pass through.
+      - paragraph [ref=e44]: Drawing on ancient remembrance, sacred geometry, and the quiet wisdom of lived awakening, 4 Brooms offers a map for anyone who has felt the call of a larger life — and wondered if they were imagining it.
+      - paragraph [ref=e45]: You are not imagining it. You are remembering.
+  - generic [ref=e47]:
+    - generic [ref=e49]:
+      - paragraph [ref=e50]: What You Will Remember
+      - heading "Four passages through the door" [level=3] [ref=e51]
+    - generic [ref=e53]:
+      - article [ref=e54]:
+        - generic [ref=e55]: "01"
+        - heading "The Veil" [level=4] [ref=e56]
+        - paragraph [ref=e57]: A clear seeing of the story you were handed — and a gentle parting of the curtain between noise and knowing.
+      - article [ref=e58]:
+        - generic [ref=e59]: "02"
+        - heading "The Breath" [level=4] [ref=e60]
+        - paragraph [ref=e61]: "The simplest practice, returned to its original power: coming home to the body, the moment, the now."
+      - article [ref=e62]:
+        - generic [ref=e63]: "03"
+        - heading "The Geometry" [level=4] [ref=e64]
+        - paragraph [ref=e65]: Ancient patterns of coherence — how the cosmos writes itself through you, and how to read the language again.
+      - article [ref=e66]:
+        - generic [ref=e67]: "04"
+        - heading "The Walk" [level=4] [ref=e68]
+        - paragraph [ref=e69]: "What remembering asks of a life: softness, courage, and the quiet courage to live as who you already are."
+  - generic [ref=e71]:
+    - img "The Portal Door — hardcover book" [ref=e73]
+    - generic [ref=e74]:
+      - paragraph [ref=e75]: The Time of Remembering
+      - heading "A moment the planet has been waiting for." [level=3] [ref=e76]
+      - paragraph [ref=e77]: "Across continents, languages, and traditions, the same whisper is rising: it is time. Time to remember why you came, what you carry, and how to walk softly through a world that is also waking up."
+      - link "Begin Reading" [ref=e79] [cursor=pointer]:
+        - /url: https://www.amazon.com/Portal-Door-Time-Remembering-ebook/dp/B0GB5S4T8Q/ref=sr_1_1?crid=GFFAEDKC30Y6&dib=eyJ2IjoiMSJ9.9Uvfmk11L-HqZOvB7qIVBtr-du2Ns_P2tnLP4FpA1WVNtybSwZNm6Hxym0OcjasyIqzL1Dn9XGJRJuOJ5qpZfPqZL1YtfPgwVcz15d5W1O9jWBYb441TGgA9Uf4DFf-Ak0KFfdNTEhQumJgr64ZAiNfVKHPRSSrDrcUdQAsKDuTVKv8K1z_KiEMGpyUGsXWqJ9beFt8aOSe6wcDrYDNpr8zLIhnW82_S30Vu6f3Ooa4.Nmt3kjZuDx9-auzV_gNkzlRekC25SCdjTjQyND1yBgI&dib_tag=se&keywords=the+portal+door&qid=1775861866&s=books&sprefix=the+portal+door%2Cstripbooks-intl-ship%2C173&sr=1-1&asin=B0GB5S4T8Q&revisionId=9d767905&format=3&depth=1
+  - generic [ref=e81]:
+    - generic [ref=e82]:
+      - paragraph [ref=e83]: The Author
+      - heading "4 Brooms" [level=3] [ref=e84]
+      - paragraph [ref=e86]: A voice for the remembering.
+    - paragraph [ref=e88]: "4 Brooms writes from the quiet place where memory and meaning meet. The Portal Door — The Time of Remembering is a distillation of years spent listening: to the land, to the sky, and to the long-buried knowing that lives inside every one of us."
+  - generic [ref=e90]:
+    - paragraph [ref=e91]: The Door Is Open
+    - heading "Will you step through?" [level=3] [ref=e92]
+    - paragraph [ref=e93]: The Portal Door — The Time of Remembering is available now in English, shipping to readers around the planet.
+    - generic [ref=e94]:
+      - link "Order Paperback" [ref=e95] [cursor=pointer]:
+        - /url: https://www.amazon.com/Portal-Door-Time-Remembering-ebook/dp/B0GB5S4T8Q/ref=sr_1_1?crid=GFFAEDKC30Y6&dib=eyJ2IjoiMSJ9.9Uvfmk11L-HqZOvB7qIVBtr-du2Ns_P2tnLP4FpA1WVNtybSwZNm6Hxym0OcjasyIqzL1Dn9XGJRJuOJ5qpZfPqZL1YtfPgwVcz15d5W1O9jWBYb441TGgA9Uf4DFf-Ak0KFfdNTEhQumJgr64ZAiNfVKHPRSSrDrcUdQAsKDuTVKv8K1z_KiEMGpyUGsXWqJ9beFt8aOSe6wcDrYDNpr8zLIhnW82_S30Vu6f3Ooa4.Nmt3kjZuDx9-auzV_gNkzlRekC25SCdjTjQyND1yBgI&dib_tag=se&keywords=the+portal+door&qid=1775861866&s=books&sprefix=the+portal+door%2Cstripbooks-intl-ship%2C173&sr=1-1
+      - link "Read a Sample" [ref=e96] [cursor=pointer]:
+        - /url: https://www.amazon.com/Portal-Door-Time-Remembering-ebook/dp/B0GB5S4T8Q/ref=sr_1_1?crid=GFFAEDKC30Y6&dib=eyJ2IjoiMSJ9.9Uvfmk11L-HqZOvB7qIVBtr-du2Ns_P2tnLP4FpA1WVNtybSwZNm6Hxym0OcjasyIqzL1Dn9XGJRJuOJ5qpZfPqZL1YtfPgwVcz15d5W1O9jWBYb441TGgA9Uf4DFf-Ak0KFfdNTEhQumJgr64ZAiNfVKHPRSSrDrcUdQAsKDuTVKv8K1z_KiEMGpyUGsXWqJ9beFt8aOSe6wcDrYDNpr8zLIhnW82_S30Vu6f3Ooa4.Nmt3kjZuDx9-auzV_gNkzlRekC25SCdjTjQyND1yBgI&dib_tag=se&keywords=the+portal+door&qid=1775861866&s=books&sprefix=the+portal+door%2Cstripbooks-intl-ship%2C173&sr=1-1&asin=B0GB5S4T8Q&revisionId=9d767905&format=3&depth=1
+    - paragraph [ref=e97]:
+      - link "Amazon" [ref=e98] [cursor=pointer]:
+        - /url: https://www.amazon.com/Portal-Door-Time-Remembering-ebook/dp/B0GB5S4T8Q/ref=sr_1_1?crid=GFFAEDKC30Y6&dib=eyJ2IjoiMSJ9.9Uvfmk11L-HqZOvB7qIVBtr-du2Ns_P2tnLP4FpA1WVNtybSwZNm6Hxym0OcjasyIqzL1Dn9XGJRJuOJ5qpZfPqZL1YtfPgwVcz15d5W1O9jWBYb441TGgA9Uf4DFf-Ak0KFfdNTEhQumJgr64ZAiNfVKHPRSSrDrcUdQAsKDuTVKv8K1z_KiEMGpyUGsXWqJ9beFt8aOSe6wcDrYDNpr8zLIhnW82_S30Vu6f3Ooa4.Nmt3kjZuDx9-auzV_gNkzlRekC25SCdjTjQyND1yBgI&dib_tag=se&keywords=the+portal+door&qid=1775861866&s=books&sprefix=the+portal+door%2Cstripbooks-intl-ship%2C173&sr=1-1
+      - text: · Barnes & Noble · Independent Booksellers Worldwide
+  - generic [ref=e100]:
+    - generic [ref=e101]:
+      - img "Portal sigil" [ref=e103]
+      - generic [ref=e104]: THE PORTAL DOOR
+    - paragraph [ref=e105]: © 2026 4 Brooms · All Rights Reserved
+    - generic [ref=e106]:
+      - link "Contact" [ref=e107] [cursor=pointer]:
+        - /url: "#"
+      - link "Press" [ref=e108] [cursor=pointer]:
+        - /url: "#"
+      - link "Privacy" [ref=e109] [cursor=pointer]:
+        - /url: "#"

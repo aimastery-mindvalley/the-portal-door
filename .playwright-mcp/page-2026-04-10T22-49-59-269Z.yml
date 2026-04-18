@@ -1,0 +1,129 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e4]:
+      - link "Portal sigil THE PORTAL DOOR" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Portal sigil" [ref=e7]
+        - generic [ref=e8]: THE PORTAL DOOR
+      - generic [ref=e9]:
+        - link "The Book" [ref=e10] [cursor=pointer]:
+          - /url: "#about"
+        - link "Remembering" [ref=e11] [cursor=pointer]:
+          - /url: "#remember"
+        - link "Voices" [ref=e12] [cursor=pointer]:
+          - /url: "#voices"
+        - link "Author" [ref=e13] [cursor=pointer]:
+          - /url: "#author"
+      - link "Order" [ref=e14] [cursor=pointer]:
+        - /url: "#order"
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - paragraph [ref=e18]: A Planetary Awakening · New Release
+        - heading "The Portal Door" [level=1] [ref=e19]:
+          - text: The Portal
+          - text: Door
+        - paragraph [ref=e21]: The Time of Remembering
+        - paragraph [ref=e22]: Humanity stands at a threshold. Between the world we were told was real and the one we have always carried within. This book is an invitation — to cross the doorway, to remember the light you came here with, and to walk as it.
+        - generic [ref=e23]:
+          - link "Step Through · Order the Book" [ref=e24] [cursor=pointer]:
+            - /url: "#order"
+          - link "Read an Excerpt" [ref=e25] [cursor=pointer]:
+            - /url: "#about"
+        - generic [ref=e26]:
+          - generic [ref=e27]: By 4 Brooms
+          - generic [ref=e28]: ·
+          - generic [ref=e29]: English Edition
+          - generic [ref=e30]: ·
+          - generic [ref=e31]: Available Worldwide
+      - img "The Portal Door — The Time of Remembering, book cover" [ref=e34]
+    - paragraph [ref=e37]: “You were never lost. You were simply asleep inside a story that forgot your name.”
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: About the Book
+        - heading "A door was opened. It was always you." [level=2] [ref=e42]:
+          - text: A door was opened.
+          - text: It was always you.
+      - generic [ref=e44]:
+        - paragraph [ref=e45]: The Portal Door is not a metaphor. It is a living threshold — woven from the geometry of the cosmos and the memory of the soul. This book walks with you to its edge, and gently, without pressure, invites you to pass through.
+        - paragraph [ref=e46]: Drawing on ancient remembrance, sacred geometry, and the quiet wisdom of lived awakening, 4 Brooms offers a map for anyone who has felt the call of a larger life — and wondered if they were imagining it.
+        - paragraph [ref=e47]: You are not imagining it. You are remembering.
+    - generic [ref=e49]:
+      - generic [ref=e51]:
+        - paragraph [ref=e52]: What You Will Remember
+        - heading "Four passages through the door" [level=3] [ref=e53]
+      - generic [ref=e55]:
+        - article [ref=e56]:
+          - generic [ref=e57]: "01"
+          - heading "The Veil" [level=4] [ref=e58]
+          - paragraph [ref=e59]: A clear seeing of the story you were handed — and a gentle parting of the curtain between noise and knowing.
+        - article [ref=e60]:
+          - generic [ref=e61]: "02"
+          - heading "The Breath" [level=4] [ref=e62]
+          - paragraph [ref=e63]: "The simplest practice, returned to its original power: coming home to the body, the moment, the now."
+        - article [ref=e64]:
+          - generic [ref=e65]: "03"
+          - heading "The Geometry" [level=4] [ref=e66]
+          - paragraph [ref=e67]: Ancient patterns of coherence — how the cosmos writes itself through you, and how to read the language again.
+        - article [ref=e68]:
+          - generic [ref=e69]: "04"
+          - heading "The Walk" [level=4] [ref=e70]
+          - paragraph [ref=e71]: "What remembering asks of a life: softness, courage, and the quiet courage to live as who you already are."
+    - generic [ref=e73]:
+      - img "The Portal — sacred geometry" [ref=e75]
+      - generic [ref=e77]:
+        - paragraph [ref=e78]: The Time of Remembering
+        - heading "A moment the planet has been waiting for." [level=3] [ref=e79]
+        - paragraph [ref=e80]: "Across continents, languages, and traditions, the same whisper is rising: it is time. Time to remember why you came, what you carry, and how to walk softly through a world that is also waking up."
+        - link "Begin Reading" [ref=e82] [cursor=pointer]:
+          - /url: "#order"
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - paragraph [ref=e86]: Voices from the Threshold
+        - heading "Early readers" [level=3] [ref=e87]
+      - generic [ref=e88]:
+        - figure "Mara L. Early Reader" [ref=e89]:
+          - blockquote [ref=e90]: “I read it in one night and woke up different. This book is a living doorway.”
+          - generic [ref=e91]:
+            - text: Mara L.
+            - generic [ref=e92]: Early Reader
+        - figure "Jonah R. Yoga Teacher" [ref=e93]:
+          - blockquote [ref=e94]: “A map for anyone who has felt the hum of a larger life. Gentle, precise, and deeply true.”
+          - generic [ref=e95]:
+            - text: Jonah R.
+            - generic [ref=e96]: Yoga Teacher
+        - figure "Aria K. Writer" [ref=e97]:
+          - blockquote [ref=e98]: “The Portal Door is the book the planet is quietly asking for right now.”
+          - generic [ref=e99]:
+            - text: Aria K.
+            - generic [ref=e100]: Writer
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - paragraph [ref=e104]: The Author
+        - heading "4 Brooms" [level=3] [ref=e105]
+        - paragraph [ref=e107]: A voice for the remembering.
+      - paragraph [ref=e109]: "4 Brooms writes from the quiet place where memory and meaning meet. The Portal Door — The Time of Remembering is a distillation of years spent listening: to the land, to the sky, and to the long-buried knowing that lives inside every one of us."
+    - generic [ref=e111]:
+      - paragraph [ref=e112]: The Door Is Open
+      - heading "Will you step through?" [level=3] [ref=e113]
+      - paragraph [ref=e114]: The Portal Door — The Time of Remembering is available now in English, shipping to readers around the planet.
+      - generic [ref=e115]:
+        - link "Order Paperback" [ref=e116] [cursor=pointer]:
+          - /url: "#"
+        - link "Read the eBook" [ref=e117] [cursor=pointer]:
+          - /url: "#"
+      - paragraph [ref=e118]: Amazon · Barnes & Noble · Independent Booksellers Worldwide
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - img "Portal sigil" [ref=e123]
+        - generic [ref=e124]: THE PORTAL DOOR
+      - paragraph [ref=e125]: © 2026 4 Brooms · All Rights Reserved
+      - generic [ref=e126]:
+        - link "Contact" [ref=e127] [cursor=pointer]:
+          - /url: "#"
+        - link "Press" [ref=e128] [cursor=pointer]:
+          - /url: "#"
+        - link "Privacy" [ref=e129] [cursor=pointer]:
+          - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e135] [cursor=pointer]:
+    - img [ref=e136]
+  - alert [ref=e139]

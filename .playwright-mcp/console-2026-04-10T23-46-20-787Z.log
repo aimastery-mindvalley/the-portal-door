@@ -1,0 +1,17 @@
+[    1018ms] TypeError: Cannot read properties of undefined (reading 'jquery')
+    at Object.getCarousel (https://m.media-amazon.com/images/I/11zuylp74DL._RC%7C11Y+5x+kkTL.js,518IfuPC2lL.js,115zbyk371L.js,11GgN1+C7hL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21NadQlXUWL.js,01vRf9id2EL.js,11a7qqY8xXL.js,11aZNVRA-EL.js,51C4kaFbiAL.js,11FhdH2HZwL.js,11wb9K3sw0L.js,11BrgrMAHUL.js,11GPhx42StL.js,210X-JWUe-L.js,01Svfxfy8OL.js,61070UYoWML.js,01ikBbTAneL.js,31xywoXPfpL.js,01qXJuwGmxL.js,01WlsjNmqIL.js,11F929pmpYL.js,31Zn4S+IOkL.js,01rpauTep4L.js,31rqCOnXDNL.js,011FfPwYqHL.js,21P5VvHf-XL.js,013ncka0wXL.js,21kN0q4IA-L.js,01VvIkYCafL.js,11vb6P5C5AL.js,01NjPq-AshL.js_.js?AUIClients/AmazonUI:288:193)
+    at Object.getCarousel (https://m.media-amazon.com/images/I/517f0agMn-L.js?AUIClients/CardJsRuntimeBuzzCopyBuild:79:184)
+    at https://m.media-amazon.com/images/I/31+91h+b1cL.js?xcp:25:378
+    at d (https://m.media-amazon.com/images/I/517f0agMn-L.js?AUIClients/CardJsRuntimeBuzzCopyBuild:55:83)
+    at Object.next (https://m.media-amazon.com/images/I/517f0agMn-L.js?AUIClients/CardJsRuntimeBuzzCopyBuild:53:369)
+    at https://m.media-amazon.com/images/I/517f0agMn-L.js?AUIClients/CardJsRuntimeBuzzCopyBuild:53:302
+    at new Promise (<anonymous>)
+    at Object.u [as __awaiter] (https://m.media-amazon.com/images/I/517f0agMn-L.js?AUIClients/CardJsRuntimeBuzzCopyBuild:53:95)
+    at da (https://m.media-amazon.com/images/I/31+91h+b1cL.js?xcp:25:190)
+    at https://m.media-amazon.com/images/I/31+91h+b1cL.js?xcp:24:386
+[    1060ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:blank:0
+[    1156ms] [ERROR] Failed to load resource: net::ERR_TRUST_TOKEN_OPERATION_FAILED @ https://www.amazon.com/tt/i:0
+[    1693ms] [ERROR] A bad HTTP response code (404) was received when fetching the script. @ :0
+[    1694ms] [ERROR] Error logged with the Track&Report JS errors API(http://tiny/1covqr6l8/wamazindeClieUserJava): {"m":"[AUI SW] Failed to register service worker: Failed to register a ServiceWorker for scope ('https://read.amazon.com/') with script ('https://read.amazon.com/service-worker.js'): A bad HTTP response code (404) was received when fetching the script.","name":"TypeError","csm":"v5 ueLogError stack","logLevel":"ERROR","attribution":"RetailPageServiceWorker","pageURL":"https://read.amazon.com/sample/B0GB5S4T8Q?f=1&l=en_US&r=9d767905&rid=RVDAWM3XQ7K1YD5TG2TG&sid=142-7729940-5820208&ref_=litb_d","s":["TypeError: Failed to register a ServiceWorker for scope ('https://read.amazon.com/') with script ('https://read.amazon.com/service-worker.js'): A bad HTTP response code (404) was received when fetching the script."],"t":235} {m: [AUI SW] Failed to register service worker: Failed…code (404) was received when fetching the script., name: TypeError, type: undefined, csm: v5 ueLogError stack, logLevel: ERROR} @ https://images-na.ssl-images-amazon.com/images/I/215h87l68bL.js:3
+[    1843ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://read.amazon.com/hz/rhf?currentPageType=LitbHorizonte&currentSubPageType=Sample&excludeAsin=B0GB5S4T8Q&fieldKeywords=&k=&keywords=&search=&auditEnabled=&previewCampaigns=&forceWidgets=&searchAlias=&cardJSPresent=true:0
+[    2662ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://read.amazon.com/rd/uedata?rid=S2GWRDACSQVRZND8AJMY&sid=142-7729940-5820208&rx=zrpeS3qGpEm0cmKT10zlERtLAom81DRAi1ma7ZENO5c:0
