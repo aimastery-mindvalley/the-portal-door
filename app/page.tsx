@@ -129,13 +129,13 @@ export default function Home() {
       </section>
 
       {/* MARQUEE QUOTE */}
-      <section className="relative z-10 overflow-x-hidden border-y border-cyan/10 bg-abyss/40 py-10 pb-14 backdrop-blur">
+      <section className="relative z-10 overflow-x-hidden border-y border-cyan/10 bg-abyss/40 py-6 backdrop-blur">
         <div className="mx-auto w-full px-6 text-center">
-          <p className="font-display italic text-parchment text-xl md:text-[clamp(1.1rem,2vw,2.25rem)]">
+          <p className="font-display italic text-parchment leading-loose text-xl md:text-[clamp(1.1rem,2vw,2.25rem)]">
             &ldquo;You were never lost. You were simply asleep inside a story
             that forgot your name.&rdquo;
           </p>
-          <p className="title-gold mt-4 font-display font-bold italic text-xl md:text-[clamp(1.1rem,2vw,2.25rem)]">
+          <p className="title-gold font-display font-bold italic leading-loose text-xl md:text-[clamp(1.1rem,2vw,2.25rem)]">
             A door was opened. It was always you. You are not imagining
             it; you are remembering.
           </p>
