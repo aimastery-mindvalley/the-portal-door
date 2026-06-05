@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import MobileNav from "@/components/MobileNav";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const AMAZON_URL =
   "https://www.amazon.com/Portal-Door-Time-Remembering-ebook/dp/B0GB5S4T8Q/ref=sr_1_1?crid=GFFAEDKC30Y6&dib=eyJ2IjoiMSJ9.9Uvfmk11L-HqZOvB7qIVBtr-du2Ns_P2tnLP4FpA1WVNtybSwZNm6Hxym0OcjasyIqzL1Dn9XGJRJuOJ5qpZfPqZL1YtfPgwVcz15d5W1O9jWBYb441TGgA9Uf4DFf-Ak0KFfdNTEhQumJgr64ZAiNfVKHPRSSrDrcUdQAsKDuTVKv8K1z_KiEMGpyUGsXWqJ9beFt8aOSe6wcDrYDNpr8zLIhnW82_S30Vu6f3Ooa4.Nmt3kjZuDx9-auzV_gNkzlRekC25SCdjTjQyND1yBgI&dib_tag=se&keywords=the+portal+door&qid=1775861866&s=books&sprefix=the+portal+door%2Cstripbooks-intl-ship%2C173&sr=1-1";
@@ -9,7 +11,7 @@ const AMAZON_SAMPLE_URL =
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen cosmic-field">
+    <main id="top" className="relative min-h-screen cosmic-field">
       {/* Starfield layer */}
       <div className="pointer-events-none fixed inset-0 starfield opacity-60" />
       <div className="pointer-events-none fixed inset-0 starfield opacity-30 animate-twinkle" />
@@ -31,11 +33,11 @@ export default function Home() {
             </span>
           </Link>
           <div className="hidden items-center gap-10 text-xs uppercase tracking-[0.22em] text-frost/80 md:flex">
-            <Link href="#remember" className="transition hover:text-white">
-              Remembering
-            </Link>
             <Link href="#author" className="transition hover:text-white">
-              Author
+              Authors
+            </Link>
+            <Link href="#order" className="transition hover:text-white">
+              The Door Is Open
             </Link>
           </div>
           <a
@@ -46,6 +48,7 @@ export default function Home() {
           >
             Order
           </a>
+          <MobileNav />
         </nav>
       </header>
 
@@ -70,7 +73,7 @@ export default function Home() {
             </p>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-parchment md:text-lg">
               Five strangers feel it at the same moment. An artist, a
-              scientist, a healer, a musician, a storyteller. Each of them
+              scientist, a healer, a musician and a storyteller. Each of them
               hears the same frequency from opposite corners of the world,
               and each of them follows it home.
             </p>
@@ -126,109 +129,86 @@ export default function Home() {
       </section>
 
       {/* MARQUEE QUOTE */}
-      <section className="relative z-10 border-y border-cyan/10 bg-abyss/40 py-10 backdrop-blur">
-        <div className="mx-auto max-w-5xl px-6 text-center">
-          <p className="font-display text-xl italic text-parchment md:text-2xl">
+      <section className="relative z-10 overflow-hidden border-y border-cyan/10 bg-abyss/40 py-10 backdrop-blur">
+        <div className="mx-auto w-full px-6 text-center">
+          <p className="font-display italic text-parchment whitespace-nowrap text-[clamp(0.7rem,2vw,2.25rem)]">
             &ldquo;You were never lost. You were simply asleep inside a story
             that forgot your name.&rdquo;
           </p>
-          <p className="title-gold mt-4 font-display text-xl font-bold italic md:text-2xl">
+          <p className="title-gold mt-4 font-display font-bold italic whitespace-nowrap text-[clamp(0.7rem,2vw,2.25rem)]">
             A door was opened. It was always you. You are not imagining
             it; you are remembering.
           </p>
         </div>
       </section>
 
-      {/* PILLARS */}
-      <section id="remember" className="relative z-10 px-6 pb-8 md:px-12 md:pb-12">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-14 flex items-end justify-between">
-            <div>
-              <p className="eyebrow mb-4">What You Will Remember</p>
-              <h3 className="font-display text-3xl text-starlight md:text-4xl">
-                Four passages through the door
-              </h3>
-            </div>
-            <div className="hairline hidden w-48 md:block" />
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {PILLARS.map((p, i) => (
-              <article key={p.title} className="card rounded-sm p-8 transition">
-                <div className="mb-6 font-display text-3xl text-cyan">
-                  {String(i + 1).padStart(2, "0")}
-                </div>
-                <h4 className="mb-3 font-display text-2xl text-starlight">
-                  {p.title}
-                </h4>
-                <p className="text-sm leading-relaxed text-parchment/90">{p.body}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* INTERLUDE — portrait of the sigil */}
-      <section className="relative z-10 overflow-hidden px-6 py-8 md:px-12 md:py-12">
-        <div className="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-12">
-          <div className="relative mx-auto w-full max-w-sm md:col-span-6">
-            <div className="book-hero-glow" />
-            <Image
-              src="/book-single.png"
-              alt="The Portal Door — hardcover book"
-              width={800}
-              height={1200}
-              className="relative z-10 block h-auto w-full"
-            />
-          </div>
-          <div className="md:col-span-6">
-            <p className="eyebrow mb-6">The Time of Remembering</p>
-            <h3 className="font-display text-4xl leading-tight text-starlight md:text-5xl">
-              A moment the planet has been waiting for.
-            </h3>
-            <p className="mt-8 max-w-lg text-lg leading-relaxed text-parchment">
-              Across continents, languages, and traditions, the same whisper is
-              rising: it is time. Time to remember why you came, what you
-              carry, and how to walk softly through a world that is also
-              waking up.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href={AMAZON_SAMPLE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary"
-              >
-                Begin Reading
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* AUTHOR */}
+      <ScrollReveal>
       <section id="author" className="relative z-10 px-6 py-8 md:px-12 md:py-12">
-        <div className="mx-auto grid max-w-5xl gap-12 md:grid-cols-12 md:items-center">
-          <div className="md:col-span-5">
-            <p className="eyebrow mb-6">The Author</p>
-            <h3 className="font-display text-5xl text-starlight">4 Brooms</h3>
-            <div className="hairline my-6 w-24" />
-            <p className="font-display text-xl italic text-parchment/90">
-              A voice for the remembering.
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="eyebrow mb-6">The Authors</p>
+          <h3 className="font-display text-5xl text-starlight">4 Brooms</h3>
+          <div className="hairline mx-auto my-6 w-24" />
+          <p className="font-display text-xl italic text-parchment/90">
+            A voice for the remembering.
+          </p>
+          <div className="mt-10 space-y-4 text-lg leading-relaxed text-parchment">
+            <p>
+              We met at a retreat-workshop, where what began as a shared
+              creative experience quietly unfolded into something far deeper.
+              From that moment, a connection took root. It felt like
+              recognition, as though some part of us had been waiting to find
+              the others. Over time, that recognition grew into a friendship
+              rooted in trust, creativity, and a shared sense of purpose.
             </p>
-          </div>
-          <div className="md:col-span-7">
-            <p className="text-lg leading-relaxed text-parchment">
-              4 Brooms writes from the quiet place where memory and meaning
-              meet. The Portal Door — The Time of Remembering is a distillation
-              of years spent listening: to the land, to the sky, and to the
-              long-buried knowing that lives inside every one of us.
+            <p>
+              For two of us, Ray and Cosmina, now lovingly known as Raymina,
+              that connection went further still. It became a lifelong
+              partnership.
+            </p>
+            <p>
+              Oceans and continents stretch between us. Ray and Cosmina
+              (Raymina) write from Calgary, Alberta. Iliana writes from Port
+              Angeles, near Seattle, with her family beside her. Pania writes
+              from Russell, in North Auckland, with her family there too.
+              Distance has never thinned what we share. Across time zones and
+              changing skies, an unseen thread continues to draw us together,
+              weaving our lives and our gifts into something meaningful and
+              alive.
+            </p>
+            <p>
+              Along the way, we found ourselves laughing about the &ldquo;brooms.&rdquo;
+              A playful nod to witches and wizardry, and a quiet symbol of
+              something deeper. For us, the broom came to represent the act of
+              clearing space, of gently sweeping away what no longer serves,
+              making room for growth, clarity, and creation.
+            </p>
+            <p>
+              Each of us felt called to write in our own way, and that calling
+              first led us toward a simple idea: a children&rsquo;s book, an
+              invitation to reconnect with the wonder of our inner child. As
+              the story began to unfold, it revealed a life of its own. It
+              expanded beyond what we had imagined, reaching toward readers of
+              all ages.
+            </p>
+            <p>And so, this journey began.</p>
+            <p>
+              What started as a spark between friends has grown into a shared
+              creation, shaped by imagination, by connection, by intention, and
+              by the quiet unfolding of something greater than ourselves.
+            </p>
+            <p>
+              We invite you to step through this door with us, and we hope you
+              experience the journey as deeply as we have in bringing it to
+              life.
             </p>
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* ORDER / CTA */}
+      <ScrollReveal>
       <section id="order" className="relative z-10 px-6 py-10 md:px-12 md:py-14">
         <div className="mx-auto max-w-4xl text-center">
           <p className="eyebrow mb-6">The Door Is Open</p>
@@ -265,64 +245,47 @@ export default function Home() {
               className="transition hover:text-white"
             >
               Amazon
-            </a>{" "}
-            · Barnes &amp; Noble · Independent Booksellers Worldwide
+            </a>
           </p>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* FOOTER */}
       <footer className="relative z-10 border-t border-cyan/10 px-6 py-12 md:px-12">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="flex items-center gap-3">
+          <Link
+            href="#top"
+            className="group flex items-center gap-3 transition"
+            aria-label="Back to top"
+          >
             <span className="relative inline-block h-6 w-6">
               <Image
                 src="/portal-sigil.png"
                 alt="Portal sigil"
                 fill
-                className="object-contain opacity-80"
+                className="object-contain opacity-80 transition group-hover:opacity-100"
               />
             </span>
-            <span className="font-display text-sm tracking-widest text-frost/70">
+            <span className="font-display text-sm tracking-widest text-frost/70 transition group-hover:text-white">
               THE PORTAL DOOR
             </span>
-          </div>
+          </Link>
           <p className="text-xs uppercase tracking-[0.2em] text-frost/50">
             &copy; {new Date().getFullYear()} 4 Brooms · All Rights Reserved
           </p>
-          <div className="flex items-center gap-6 text-xs uppercase tracking-[0.2em] text-frost/60">
-            <Link href="#" className="transition hover:text-white">
-              Contact
-            </Link>
-            <Link href="#" className="transition hover:text-white">
-              Press
-            </Link>
-            <Link href="#" className="transition hover:text-white">
-              Privacy
-            </Link>
-          </div>
+          <a
+            href={AMAZON_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs uppercase tracking-[0.2em] text-frost/60 transition hover:text-white"
+          >
+            Available on Amazon
+          </a>
         </div>
       </footer>
     </main>
   );
 }
 
-const PILLARS = [
-  {
-    title: "The Veil",
-    body: "A clear seeing of the story you were handed — and a gentle parting of the curtain between noise and knowing.",
-  },
-  {
-    title: "The Breath",
-    body: "The simplest practice, returned to its original power: coming home to the body, the moment, the now.",
-  },
-  {
-    title: "The Geometry",
-    body: "Ancient patterns of coherence — how the cosmos writes itself through you, and how to read the language again.",
-  },
-  {
-    title: "The Walk",
-    body: "What remembering asks of a life: softness, courage, and the quiet courage to live as who you already are.",
-  },
-];
 

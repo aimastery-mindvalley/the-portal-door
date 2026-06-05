@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Portal Door — Brand Colors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --font-serif: "Cormorant Garamond", Georgia, serif;
+        --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+        --abyss: #0b1e52;
+        --night: #132a6a;
+        --twilight: #1a3880;
+        --button-deep: #0d2362;
+        --button-mid: #153085;
+
+        --cyan: #7dd3fc;
+        --sky: #bae6fd;
+        --frost: #e0f2fe;
+        --azure: #4a90e2;
+        --mist: #e8f3ff;
+
+        --gold-light: #f7e1a3;
+        --gold: #e9c77b;
+        --gold-deep: #c89a4b;
+        --gold-text: #f5d47a;
+        --gold-hover: #ffe4a2;
+      }
+
+      * { box-sizing: border-box; }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--abyss);
+        color: var(--mist);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        background:
+          radial-gradient(ellipse 70% 60% at 50% 20%, rgba(125, 211, 252, 0.25) 0%, transparent 60%),
+          radial-gradient(ellipse 60% 50% at 80% 80%, rgba(74, 144, 226, 0.22) 0%, transparent 55%),
+          radial-gradient(ellipse 50% 40% at 10% 60%, rgba(186, 230, 253, 0.14) 0%, transparent 55%),
+          linear-gradient(180deg, #0b1e52 0%, #132a6a 45%, #1a3880 100%);
+        min-height: 100vh;
+      }
+
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 64px 32px 96px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 64px;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: var(--cyan);
+        margin: 0 0 16px;
+      }
+
+      h1 {
+        font-family: var(--font-serif);
+        font-weight: 600;
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        margin: 0 0 12px;
+        background: linear-gradient(180deg, #f7e1a3 0%, #e9c77b 45%, #c89a4b 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 40px rgba(233, 199, 123, 0.15);
+        filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.35));
+      }
+
+      .subtitle {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: 1.25rem;
+        color: rgba(232, 243, 255, 0.85);
+        margin: 0;
+      }
+
+      .hairline {
+        height: 1px;
+        width: 96px;
+        margin: 32px auto;
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          rgba(125, 211, 252, 0.55) 50%,
+          transparent 100%
+        );
+      }
+
+      h2 {
+        font-family: var(--font-serif);
+        font-weight: 600;
+        font-size: 1.85rem;
+        color: var(--mist);
+        margin: 64px 0 8px;
+        letter-spacing: 0.01em;
+      }
+
+      .section-intro {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: 1.05rem;
+        color: rgba(232, 243, 255, 0.7);
+        margin: 0 0 28px;
+        max-width: 640px;
+      }
+
+      .group-label {
+        font-size: 11px;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: var(--cyan);
+        margin: 0 0 24px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+      }
+
+      .swatch {
+        background: linear-gradient(
+          180deg,
+          rgba(19, 59, 116, 0.25) 0%,
+          rgba(7, 18, 51, 0.15) 100%
+        );
+        border: 1px solid rgba(125, 211, 252, 0.12);
+        border-radius: 6px;
+        overflow: hidden;
+        backdrop-filter: blur(8px);
+        transition: border-color 0.3s ease, transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .swatch:hover {
+        border-color: rgba(125, 211, 252, 0.3);
+        transform: translateY(-2px);
+      }
+
+      .chip {
+        height: 130px;
+        width: 100%;
+        display: block;
+      }
+
+      .chip.bordered {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .meta {
+        padding: 18px 20px 22px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .name {
+        font-family: var(--font-serif);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0 0 4px;
+        color: var(--mist);
+      }
+
+      .role {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(186, 230, 253, 0.75);
+        margin: 0 0 12px;
+      }
+
+      .codes {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        font-size: 11.5px;
+        color: rgba(232, 243, 255, 0.78);
+        font-family: ui-monospace, "SF Mono", Menlo, monospace;
+        margin-bottom: 14px;
+      }
+
+      .codes span { letter-spacing: 0.04em; }
+
+      .usage {
+        font-size: 12.5px;
+        line-height: 1.55;
+        color: rgba(232, 243, 255, 0.72);
+        margin: 0;
+        padding-top: 12px;
+        border-top: 1px solid rgba(125, 211, 252, 0.1);
+        font-style: italic;
+      }
+
+      .gradient-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .gradient-card {
+        border: 1px solid rgba(125, 211, 252, 0.12);
+        border-radius: 6px;
+        overflow: hidden;
+        background: linear-gradient(
+          180deg,
+          rgba(19, 59, 116, 0.25) 0%,
+          rgba(7, 18, 51, 0.15) 100%
+        );
+      }
+
+      .gradient-band {
+        height: 120px;
+        width: 100%;
+      }
+
+      .gradient-meta {
+        padding: 18px 22px 22px;
+      }
+
+      .gradient-meta .name { margin-bottom: 6px; }
+
+      .gradient-meta .recipe {
+        font-family: ui-monospace, "SF Mono", Menlo, monospace;
+        font-size: 11.5px;
+        color: rgba(186, 230, 253, 0.7);
+        margin: 8px 0 0;
+        line-height: 1.6;
+        word-break: break-word;
+      }
+
+      .gradient-cosmic {
+        background:
+          radial-gradient(ellipse 70% 60% at 50% 20%, rgba(125, 211, 252, 0.25) 0%, transparent 60%),
+          radial-gradient(ellipse 60% 50% at 80% 80%, rgba(74, 144, 226, 0.22) 0%, transparent 55%),
+          radial-gradient(ellipse 50% 40% at 10% 60%, rgba(186, 230, 253, 0.14) 0%, transparent 55%),
+          linear-gradient(180deg, #0b1e52 0%, #132a6a 45%, #1a3880 100%);
+      }
+
+      .gradient-gold {
+        background: linear-gradient(180deg, #f7e1a3 0%, #e9c77b 45%, #c89a4b 100%);
+      }
+
+      .gradient-button {
+        background: linear-gradient(180deg, #0d2362 0%, #153085 55%, #0b1e52 100%);
+      }
+
+      .gradient-hairline {
+        background: linear-gradient(90deg, transparent 0%, rgba(125, 211, 252, 0.55) 50%, transparent 100%);
+        height: 4px;
+        margin: 58px 0;
+      }
+
+      .gradient-card.hairline-card .gradient-band {
+        background:
+          linear-gradient(180deg, #0b1e52 0%, #132a6a 100%);
+        position: relative;
+      }
+
+      .gradient-card.hairline-card .gradient-band::after {
+        content: "";
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top: 50%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent 0%, rgba(125, 211, 252, 0.55) 50%, transparent 100%);
+      }
+
+      .gradient-card.shimmer-card .gradient-band {
+        background:
+          linear-gradient(120deg, transparent 30%, rgba(245, 212, 122, 0.2) 50%, transparent 70%),
+          linear-gradient(180deg, #0d2362 0%, #153085 55%, #0b1e52 100%);
+      }
+
+      .typography {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .type-card {
+        padding: 32px;
+        border: 1px solid rgba(125, 211, 252, 0.12);
+        border-radius: 6px;
+        background: linear-gradient(
+          180deg,
+          rgba(19, 59, 116, 0.25) 0%,
+          rgba(7, 18, 51, 0.15) 100%
+        );
+      }
+
+      .type-sample-serif {
+        font-family: var(--font-serif);
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 0 0 12px;
+        color: var(--mist);
+      }
+
+      .type-sample-sans {
+        font-family: var(--font-sans);
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 0 0 12px;
+        color: var(--mist);
+        letter-spacing: 0.01em;
+      }
+
+      .type-name {
+        font-size: 11px;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: var(--cyan);
+        margin: 0 0 6px;
+      }
+
+      .type-role {
+        font-size: 13px;
+        color: rgba(232, 243, 255, 0.7);
+        margin: 0 0 12px;
+      }
+
+      .type-usage {
+        font-size: 12.5px;
+        font-style: italic;
+        color: rgba(232, 243, 255, 0.7);
+        line-height: 1.6;
+        margin: 12px 0 0;
+        padding-top: 12px;
+        border-top: 1px solid rgba(125, 211, 252, 0.1);
+      }
+
+      .buttons-preview {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding: 32px;
+        border: 1px solid rgba(125, 211, 252, 0.12);
+        border-radius: 6px;
+        background: linear-gradient(
+          180deg,
+          rgba(19, 59, 116, 0.25) 0%,
+          rgba(7, 18, 51, 0.15) 100%
+        );
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 32px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #f5d47a;
+        background: linear-gradient(180deg, #0d2362 0%, #153085 55%, #0b1e52 100%);
+        border: 1px solid rgba(245, 212, 122, 0.6);
+        border-radius: 2px;
+        text-decoration: none;
+      }
+
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 32px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #f5d47a;
+        background: transparent;
+        border: 1px solid rgba(245, 212, 122, 0.45);
+        border-radius: 2px;
+        text-decoration: none;
+      }
+
+      .principles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+        margin-top: 8px;
+      }
+
+      .principle {
+        padding: 24px;
+        border: 1px solid rgba(125, 211, 252, 0.12);
+        border-radius: 6px;
+        background: linear-gradient(
+          180deg,
+          rgba(19, 59, 116, 0.25) 0%,
+          rgba(7, 18, 51, 0.15) 100%
+        );
+      }
+
+      .principle h3 {
+        font-family: var(--font-serif);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0 0 8px;
+        color: var(--gold-text);
+      }
+
+      .principle p {
+        font-size: 13.5px;
+        line-height: 1.6;
+        color: rgba(232, 243, 255, 0.78);
+        margin: 0;
+      }
+
+      footer {
+        margin-top: 80px;
+        padding-top: 24px;
+        border-top: 1px solid rgba(125, 211, 252, 0.12);
+        text-align: center;
+        font-size: 11px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: rgba(224, 242, 254, 0.5);
+      }
+
+      @media (max-width: 640px) {
+        .typography { grid-template-columns: 1fr; }
+        .type-sample-serif { font-size: 2rem; }
+      }
+
+      @media print {
+        html, body {
+          background: #0b1e52 !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        body {
+          background:
+            radial-gradient(ellipse 70% 60% at 50% 20%, rgba(125, 211, 252, 0.25) 0%, transparent 60%),
+            linear-gradient(180deg, #0b1e52 0%, #132a6a 45%, #1a3880 100%) !important;
+        }
+        .swatch, .gradient-card, .type-card, .principle, .buttons-preview {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+        h2 { break-after: avoid; page-break-after: avoid; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <p class="eyebrow">Brand System</p>
+        <h1>The Portal Door</h1>
+        <p class="subtitle">Color, Typography &amp; Visual Language</p>
+        <div class="hairline"></div>
+      </header>
+
+      <h2>Royal Blues — Foundation</h2>
+      <p class="section-intro">
+        The deep blues hold the night sky of the brand. They appear as the page background, the cosmic gradient, and the surface of every primary button.
+      </p>
+      <div class="grid">
+        <div class="swatch">
+          <span class="chip bordered" style="background:#0b1e52"></span>
+          <div class="meta">
+            <p class="name">Abyss</p>
+            <p class="role">Primary Background</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#0B1E52</span>
+              <span>RGB&nbsp;&nbsp;11, 30, 82</span>
+            </div>
+            <p class="usage">The base color of the entire site. Used as the body background and the bottom stop of the cosmic gradient.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#132a6a"></span>
+          <div class="meta">
+            <p class="name">Night</p>
+            <p class="role">Mid Gradient</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#132A6A</span>
+              <span>RGB&nbsp;&nbsp;19, 42, 106</span>
+            </div>
+            <p class="usage">Middle stop of the cosmic background gradient. Lifts the page out of pure darkness toward the horizon.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#1a3880"></span>
+          <div class="meta">
+            <p class="name">Twilight</p>
+            <p class="role">Top Gradient</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#1A3880</span>
+              <span>RGB&nbsp;&nbsp;26, 56, 128</span>
+            </div>
+            <p class="usage">Lightest royal in the page gradient. Creates the soft "lit horizon" feeling at the top of the cosmic field.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#0d2362"></span>
+          <div class="meta">
+            <p class="name">Button Deep</p>
+            <p class="role">Button Gradient Base</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#0D2362</span>
+              <span>RGB&nbsp;&nbsp;13, 35, 98</span>
+            </div>
+            <p class="usage">Top edge of the primary button. Gives CTAs a polished, raised quality.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#153085"></span>
+          <div class="meta">
+            <p class="name">Button Mid</p>
+            <p class="role">Button Gradient Center</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#153085</span>
+              <span>RGB&nbsp;&nbsp;21, 48, 133</span>
+            </div>
+            <p class="usage">Center highlight of the primary button gradient. Catches the eye on hover.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Sky &amp; Cyan Accents</h2>
+      <p class="section-intro">
+        The sky family carries the "starlight" of the brand. These blues appear in the eyebrow labels, hairlines, glow auras, and as soft body text.
+      </p>
+      <div class="grid">
+        <div class="swatch">
+          <span class="chip bordered" style="background:#7dd3fc"></span>
+          <div class="meta">
+            <p class="name">Cyan</p>
+            <p class="role">Eyebrow / Accent</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#7DD3FC</span>
+              <span>RGB&nbsp;&nbsp;125, 211, 252</span>
+            </div>
+            <p class="usage">All eyebrow labels ("A Story of Awakening", "The Authors") and the italic word "through?" in the CTA. Use sparingly as the brand's signature glow.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#bae6fd"></span>
+          <div class="meta">
+            <p class="name">Sky</p>
+            <p class="role">Stars / Soft Highlights</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#BAE6FD</span>
+              <span>RGB&nbsp;&nbsp;186, 230, 253</span>
+            </div>
+            <p class="usage">Used at low opacity for the brighter stars in the starfield. Also tints the cosmic glow behind the book mockup.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#e0f2fe"></span>
+          <div class="meta">
+            <p class="name">Frost</p>
+            <p class="role">Secondary Text</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#E0F2FE</span>
+              <span>RGB&nbsp;&nbsp;224, 242, 254</span>
+            </div>
+            <p class="usage">Quiet supporting text — nav links, footer copy, "Available Worldwide" tags. Always at 50–80% opacity.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#4a90e2"></span>
+          <div class="meta">
+            <p class="name">Azure</p>
+            <p class="role">Cosmic Glow</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#4A90E2</span>
+              <span>RGB&nbsp;&nbsp;74, 144, 226</span>
+            </div>
+            <p class="usage">Mid-tone royal blue used in the bottom-right glow of the cosmic field. Adds depth without competing with cyan.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#e8f3ff"></span>
+          <div class="meta">
+            <p class="name">Mist</p>
+            <p class="role">Primary Body Text</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#E8F3FF</span>
+              <span>RGB&nbsp;&nbsp;232, 243, 255</span>
+            </div>
+            <p class="usage">Default body text color. The cool, off-white tone keeps reading comfortable on dark royal blue.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Gold — Sacred Accent</h2>
+      <p class="section-intro">
+        Gold is the most precious color in the system. It marks the title, the CTA buttons, and any moment that should feel like recognition or remembering.
+      </p>
+      <div class="grid">
+        <div class="swatch">
+          <span class="chip bordered" style="background:#f7e1a3"></span>
+          <div class="meta">
+            <p class="name">Gold Light</p>
+            <p class="role">Title Gradient Top</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#F7E1A3</span>
+              <span>RGB&nbsp;&nbsp;247, 225, 163</span>
+            </div>
+            <p class="usage">Top stop of the gold title fill — gives the headline a soft, lit edge as if catching candlelight.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#e9c77b"></span>
+          <div class="meta">
+            <p class="name">Gold</p>
+            <p class="role">Title Gradient Mid</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#E9C77B</span>
+              <span>RGB&nbsp;&nbsp;233, 199, 123</span>
+            </div>
+            <p class="usage">The brand's "true" gold tone. The mid stop of the title and the warm glow under the headline.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#c89a4b"></span>
+          <div class="meta">
+            <p class="name">Gold Deep</p>
+            <p class="role">Title Gradient Base</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#C89A4B</span>
+              <span>RGB&nbsp;&nbsp;200, 154, 75</span>
+            </div>
+            <p class="usage">Bottom stop of the gold title gradient. The shadow that gives "The Portal Door" its embossed, bookbinder feel.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#f5d47a"></span>
+          <div class="meta">
+            <p class="name">Gold Text</p>
+            <p class="role">Buttons (Default)</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#F5D47A</span>
+              <span>RGB&nbsp;&nbsp;245, 212, 122</span>
+            </div>
+            <p class="usage">Default text color of the primary and ghost buttons. Border at 45–60% opacity of this color.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:#ffe4a2"></span>
+          <div class="meta">
+            <p class="name">Gold Hover</p>
+            <p class="role">Buttons (Hover)</p>
+            <div class="codes">
+              <span>HEX&nbsp;&nbsp;#FFE4A2</span>
+              <span>RGB&nbsp;&nbsp;255, 228, 162</span>
+            </div>
+            <p class="usage">Brighter gold for hover states — both button text and border lift to this color when the cursor enters.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Supporting Tints &amp; Overlays</h2>
+      <p class="section-intro">
+        These are the transparencies and washes that build cards, dividers, glows and depth across the site. They're tints of the core palette, never new colors.
+      </p>
+      <div class="grid">
+        <div class="swatch">
+          <span class="chip bordered" style="background:rgba(125, 211, 252, 0.55)"></span>
+          <div class="meta">
+            <p class="name">Cyan 55%</p>
+            <p class="role">Hairline Center</p>
+            <div class="codes"><span>rgba(125, 211, 252, 0.55)</span></div>
+            <p class="usage">Brightest point of the horizontal hairline divider that fades to transparent at both ends.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:rgba(125, 211, 252, 0.30)"></span>
+          <div class="meta">
+            <p class="name">Cyan 30%</p>
+            <p class="role">Card Border (Hover)</p>
+            <div class="codes"><span>rgba(125, 211, 252, 0.30)</span></div>
+            <p class="usage">Card border lifts to this on hover. Subtle glow without changing layout.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:rgba(125, 211, 252, 0.12)"></span>
+          <div class="meta">
+            <p class="name">Cyan 12%</p>
+            <p class="role">Card Border (Default)</p>
+            <div class="codes"><span>rgba(125, 211, 252, 0.12)</span></div>
+            <p class="usage">Default border on cards, marquee section, and footer dividers. Keeps shapes felt but not loud.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:rgba(19, 59, 116, 0.25)"></span>
+          <div class="meta">
+            <p class="name">Card Top</p>
+            <p class="role">Card Surface</p>
+            <div class="codes"><span>rgba(19, 59, 116, 0.25)</span></div>
+            <p class="usage">Top of the card background gradient. Sits on the cosmic field with subtle blur.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:rgba(7, 18, 51, 0.15)"></span>
+          <div class="meta">
+            <p class="name">Card Base</p>
+            <p class="role">Card Surface</p>
+            <div class="codes"><span>rgba(7, 18, 51, 0.15)</span></div>
+            <p class="usage">Bottom of the card gradient. Almost transparent — the cosmic field shows through.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:rgba(245, 212, 122, 0.60)"></span>
+          <div class="meta">
+            <p class="name">Gold Border</p>
+            <p class="role">Primary Button Edge</p>
+            <div class="codes"><span>rgba(245, 212, 122, 0.60)</span></div>
+            <p class="usage">Default border around primary CTA. Lifts to 95% on hover.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:rgba(245, 212, 122, 0.20)"></span>
+          <div class="meta">
+            <p class="name">Gold Shimmer</p>
+            <p class="role">Button Sweep</p>
+            <div class="codes"><span>rgba(245, 212, 122, 0.20)</span></div>
+            <p class="usage">The bright streak that sweeps across buttons on hover. Diagonal, brief, never overdone.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:rgba(232, 243, 255, 0.85)"></span>
+          <div class="meta">
+            <p class="name">Mist 85%</p>
+            <p class="role">Body Quotes</p>
+            <div class="codes"><span>rgba(232, 243, 255, 0.85)</span></div>
+            <p class="usage">Italic pull-quotes and supporting paragraphs use mist at slightly reduced opacity for hierarchy.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <span class="chip bordered" style="background:rgba(224, 242, 254, 0.50)"></span>
+          <div class="meta">
+            <p class="name">Frost 50%</p>
+            <p class="role">Footer / Caption</p>
+            <div class="codes"><span>rgba(224, 242, 254, 0.50)</span></div>
+            <p class="usage">Tertiary text — copyright lines, the "Available on Amazon" link, smallest captions.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Signature Gradients</h2>
+      <p class="section-intro">
+        Three gradients carry the brand. Used together they tell the whole story: the night, the threshold, and the gold.
+      </p>
+      <div class="gradient-row">
+        <div class="gradient-card">
+          <div class="gradient-band gradient-cosmic"></div>
+          <div class="gradient-meta">
+            <p class="name">Cosmic Field</p>
+            <p class="role">Page Background</p>
+            <p class="usage">The whole site rests on this. Three soft radial glows over a vertical royal-blue gradient — sky at the top, abyss at the bottom.</p>
+            <p class="recipe">radial-gradient(ellipse 70% 60% at 50% 20%, rgba(125,211,252,.25), transparent 60%),<br/>radial-gradient(ellipse 60% 50% at 80% 80%, rgba(74,144,226,.22), transparent 55%),<br/>radial-gradient(ellipse 50% 40% at 10% 60%, rgba(186,230,253,.14), transparent 55%),<br/>linear-gradient(180deg, #0B1E52 0%, #132A6A 45%, #1A3880 100%)</p>
+          </div>
+        </div>
+        <div class="gradient-card">
+          <div class="gradient-band gradient-gold"></div>
+          <div class="gradient-meta">
+            <p class="name">Title Gold</p>
+            <p class="role">Headline Fill (180&deg;)</p>
+            <p class="usage">Used as a background-clip on display headlines so the type itself becomes a stamped gold surface.</p>
+            <p class="recipe">linear-gradient(180deg, #F7E1A3 0%, #E9C77B 45%, #C89A4B 100%)</p>
+          </div>
+        </div>
+        <div class="gradient-card">
+          <div class="gradient-band gradient-button"></div>
+          <div class="gradient-meta">
+            <p class="name">Royal Button</p>
+            <p class="role">Primary CTA Surface</p>
+            <p class="usage">A subtle 3-stop royal gradient that lifts back to abyss at the bottom — gives the button a pressed, jeweled feel.</p>
+            <p class="recipe">linear-gradient(180deg, #0D2362 0%, #153085 55%, #0B1E52 100%)</p>
+          </div>
+        </div>
+        <div class="gradient-card hairline-card">
+          <div class="gradient-band"></div>
+          <div class="gradient-meta">
+            <p class="name">Hairline Divider</p>
+            <p class="role">Section Separator</p>
+            <p class="usage">A 1px horizontal line that fades in and out — used between section labels and headlines as a "breath" mark.</p>
+            <p class="recipe">linear-gradient(90deg, transparent 0%, rgba(125,211,252,.55) 50%, transparent 100%)</p>
+          </div>
+        </div>
+        <div class="gradient-card shimmer-card">
+          <div class="gradient-band"></div>
+          <div class="gradient-meta">
+            <p class="name">Button Shimmer</p>
+            <p class="role">Hover Sweep</p>
+            <p class="usage">A diagonal gold streak that slides across buttons on hover. Plays once on each enter; never loops.</p>
+            <p class="recipe">linear-gradient(120deg, transparent 30%, rgba(245,212,122,.20) 50%, transparent 70%)</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Typography</h2>
+      <p class="section-intro">
+        Two typefaces, both delivered by Google Fonts. The serif is the storyteller. The sans is the steady hand.
+      </p>
+      <div class="typography">
+        <div class="type-card">
+          <p class="type-name">Display</p>
+          <p class="type-sample-serif">Step Through</p>
+          <p class="type-role">Cormorant Garamond · 400 / 500 / 600 / 700 · Italic available</p>
+          <p class="type-usage">Used for the gold title, all H2 / H3 headings, pull-quotes, and any italic emphasis. Carries the literary, "old book" feeling.</p>
+        </div>
+        <div class="type-card">
+          <p class="type-name">Body</p>
+          <p class="type-sample-sans">A voice for the remembering.</p>
+          <p class="type-role">Inter · 300 / 400 / 500 / 600</p>
+          <p class="type-usage">Body copy, navigation, eyebrow labels, button labels, footer text. Tracking widens (0.18–0.32em) for uppercase labels.</p>
+        </div>
+      </div>
+
+      <h2>Button System</h2>
+      <p class="section-intro">
+        Two buttons, both gold-on-royal. Use Primary for the main action on a section, Ghost for the secondary read-or-explore action.
+      </p>
+      <div class="buttons-preview">
+        <a href="#" class="btn-primary">Step Through · Order</a>
+        <a href="#" class="btn-ghost">Read a Sample</a>
+      </div>
+
+      <h2>Brand Principles</h2>
+      <p class="section-intro">
+        Quick reminders for anyone touching the visual system.
+      </p>
+      <div class="principles">
+        <div class="principle">
+          <h3>Royal blue is the room.</h3>
+          <p>Never break out of the cosmic field. New sections layer on top of it with cards, never with solid panels.</p>
+        </div>
+        <div class="principle">
+          <h3>Gold is sacred.</h3>
+          <p>Reserve gold for titles, CTAs and the moments meant to be remembered. If everything is gold, nothing is.</p>
+        </div>
+        <div class="principle">
+          <h3>Cyan whispers.</h3>
+          <p>Cyan is for eyebrows, hairlines and one or two italic words — never headlines, never paragraphs.</p>
+        </div>
+        <div class="principle">
+          <h3>Edges stay soft.</h3>
+          <p>Borders sit at 12–30% opacity. Glows are blurred. Nothing on the page should feel hard-edged or stamped down.</p>
+        </div>
+        <div class="principle">
+          <h3>Type breathes.</h3>
+          <p>Serif for the story, sans for the signs. Uppercase labels always carry wide tracking (0.18em or more).</p>
+        </div>
+        <div class="principle">
+          <h3>Motion is gentle.</h3>
+          <p>Reveals fade up by 12–24px. Buttons lift 2px on hover. Nothing zooms, bounces or spins.</p>
+        </div>
+      </div>
+
+      <footer>
+        The Portal Door &middot; 4 Brooms &middot; Brand Reference
+      </footer>
+    </div>
+  </body>
+</html>
