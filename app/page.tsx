@@ -85,6 +85,21 @@ export default function Home() {
               waiting.
             </p>
 
+            {/* Book image — mobile only, sits above buttons */}
+            <div className="mt-10 md:hidden">
+              <div className="book-hero-wrap relative mx-auto w-full max-w-sm animate-drift">
+                <div className="book-hero-glow" />
+                <Image
+                  src="/book-hero.png"
+                  alt="The Portal Door — The Time of Remembering, hardcover and stacked copies"
+                  width={1200}
+                  height={1200}
+                  priority
+                  className="relative z-10 block h-auto w-full"
+                />
+              </div>
+            </div>
+
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href={AMAZON_URL}
@@ -113,8 +128,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Book display column */}
-          <div className="md:col-span-5">
+          {/* Book display column — desktop only */}
+          <div className="hidden md:block md:col-span-5">
             <div className="book-hero-wrap relative mx-auto w-full max-w-lg animate-drift">
               <div className="book-hero-glow" />
               <Image
