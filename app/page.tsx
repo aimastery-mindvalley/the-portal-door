@@ -40,14 +40,16 @@ export default function Home() {
               The Door Is Open
             </Link>
           </div>
-          <a
-            href={AMAZON_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-ghost hidden md:inline-flex"
-          >
-            Order
-          </a>
+          <div className="hidden md:block">
+            <a
+              href={AMAZON_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost"
+            >
+              Order
+            </a>
+          </div>
           <MobileNav />
         </nav>
       </header>
@@ -90,7 +92,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
-                Step Through · Order the Book
+                Order the Book
               </a>
               <a
                 href={AMAZON_SAMPLE_URL}
